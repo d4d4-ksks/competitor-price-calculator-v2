@@ -42,6 +42,7 @@ table{width:2252px}
 .drawer-body .pi-mode input:checked{border:7px solid #0072e5}
 .tier-columns-table{width:max-content;min-width:100%}
 .col-compet-tier{width:210px}
+.tier-columns-table .col-pi{width:104px}
 .static-competitor{font-size:16px}
 .actions{align-items:center}
 .actions>.column-picker{margin-right:12px}
