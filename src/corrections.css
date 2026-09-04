@@ -69,3 +69,17 @@ table{width:2252px}
 .all-filters-menu input{appearance:none;width:20px;height:20px;flex:0 0 20px;border:1px solid #adafb1;border-radius:6px;background:#fff;display:grid;place-items:center;cursor:pointer}
 .all-filters-menu input:checked{background:#0072e5;border-color:#0072e5}
 .all-filters-menu input:checked:after{content:"✓";color:#fff;font-size:13px;line-height:1}
+.pi-filter{position:relative;flex:0 0 auto}
+.pi-filter>button svg{transition:transform .16s ease}
+.pi-filter>button.is-open svg{transform:rotate(180deg)}
+.pi-filter-menu{position:absolute;left:0;top:36px;width:430px;background:#fff;border-radius:10px;box-shadow:0 8px 24px rgba(26,27,28,.18),inset 0 0 0 1px #e1e2e3;z-index:30;overflow:hidden}
+.pi-filter-options{padding:10px 0}
+.pi-filter-options label{height:48px;padding:0 20px;display:flex;align-items:center;gap:12px;font-size:16px;cursor:pointer;white-space:nowrap}
+.pi-filter-options input{appearance:none;width:22px;height:22px;flex:0 0 22px;border:1px solid #adafb1;border-radius:6px;background:#fff;display:grid;place-items:center;cursor:pointer}
+.pi-filter-options input:checked{background:#0072e5;border-color:#0072e5}
+.pi-filter-options input:checked:after{content:"✓";color:#fff;font-size:15px;line-height:1}
+.pi-filter-menu footer{height:64px;padding:10px 16px;border-top:1px solid #e1e2e3;display:flex;justify-content:flex-end;gap:10px}
+.pi-filter-menu footer button{height:40px;border-radius:8px;padding:0 16px;font-size:15px}
+.pi-filter-menu footer .secondary{background:#fff;border:1px solid #0072e5;color:#0059b7}
+.pi-filter-menu footer .primary{background:#0072e5;border:1px solid #0072e5;color:#fff}
+.pi-filter-menu footer .primary:disabled{background:#e1e2e3;border-color:#e1e2e3;color:#adafb1;cursor:not-allowed}
