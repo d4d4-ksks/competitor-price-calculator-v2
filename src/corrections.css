@@ -42,7 +42,7 @@ table{width:2252px}
 .drawer-body .pi-mode input:checked{border:7px solid #0072e5}
 .tier-columns-table{width:max-content;min-width:100%}
 .col-compet-tier{width:210px}
-.static-competitor{font-size:16px;text-decoration-line:underline;text-decoration-style:dotted;text-underline-offset:3px}
+.static-competitor{font-size:16px}
 .actions{align-items:center}
 .actions>.column-picker{margin-right:12px}
 .actions>.column-picker .icon-button{margin:0;border-radius:8px;padding:0 11px}
@@ -59,3 +59,13 @@ table{width:2252px}
 .column-menu footer button{height:40px;border-radius:8px;padding:0 16px;font-size:15px}
 .column-menu footer .secondary{background:#fff;border:1px solid #0072e5;color:#0059b7}
 .column-menu footer .primary{background:#0072e5;border:1px solid #0072e5;color:#fff}
+.filter-row{overflow:visible;position:relative;z-index:12}
+.all-filters{position:relative;flex:0 0 auto}
+.all-filters>button svg{transition:transform .16s ease}
+.all-filters>button.is-open svg{transform:rotate(180deg)}
+.all-filters-menu{position:absolute;left:0;top:36px;width:240px;padding:8px 0;background:#fff;border-radius:8px;box-shadow:0 8px 24px rgba(26,27,28,.18),inset 0 0 0 1px #e1e2e3;z-index:30}
+.all-filters-menu label{height:40px;padding:0 16px;display:flex;align-items:center;gap:10px;font-size:14px;cursor:pointer;white-space:nowrap}
+.all-filters-menu label:hover{background:#f4f9ff}
+.all-filters-menu input{appearance:none;width:20px;height:20px;flex:0 0 20px;border:1px solid #adafb1;border-radius:6px;background:#fff;display:grid;place-items:center;cursor:pointer}
+.all-filters-menu input:checked{background:#0072e5;border-color:#0072e5}
+.all-filters-menu input:checked:after{content:"✓";color:#fff;font-size:13px;line-height:1}
